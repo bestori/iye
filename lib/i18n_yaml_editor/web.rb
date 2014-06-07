@@ -20,6 +20,7 @@ module I18nYamlEditor
 
     define do
       on get, root do
+        binding.pry
         on param("filters") do |filters|
           options = {}
           options[:key] = /#{filters["key"]}/ if filters["key"].to_s.size > 0
