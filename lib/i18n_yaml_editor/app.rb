@@ -25,7 +25,7 @@ module I18nYamlEditor
       store.create_missing_keys
 
       $stdout.puts " * Starting web editor at port 5050"
-      Rack::Server.start :app => Web, :Port => 9494
+      Rack::Server.start :app => Web#, :Port => 9494
     end
 
     def load_translations
